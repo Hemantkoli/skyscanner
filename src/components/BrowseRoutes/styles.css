@@ -1,0 +1,11 @@
+#main_div{
+    background-color:white;
+}
+#second_main_div{
+    background-color:#8f7f8d;
+    margin: 5px;
+    padding: 15px;
+    padding-left: 50px;
+    border: 2px;
+    border-radius: 30px;
+}
