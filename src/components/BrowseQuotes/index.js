@@ -11,6 +11,10 @@ const BrowseQuotes = (props)=>{
                 Price: {index.MinPrice}<br/>
                 DepartureDate: {index.OutboundLeg.DepartureDate}<br/>
                 Carriers: {index.Carriers.Name}
+                {props.QuoteFlag
+                ?<><br/>ReturnDate: {index.InboundLeg.DepartureDate}</>
+                :<></>
+                }
             </div>
             )}
             </div>
