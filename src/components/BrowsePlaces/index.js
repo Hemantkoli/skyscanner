@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 import './styles.css';
 
 const BrowsePlaces = (props)=>{
-    if(!props.Places.length)
-    {return null;}
+    //if(!props.Places.length)
+    //{return null;}
     const constructTable = (PlaceList)=>{
         return(
         <div id="main_div">
