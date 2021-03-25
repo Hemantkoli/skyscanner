@@ -11,6 +11,10 @@ const BrowseRoutes = (props)=>{
                 Price: {index.MinPrice}<br/>
                 DepartureDate: {index.OutboundLeg.DepartureDate}<br/>
                 Carriers: {index.Carriers.Name}
+                {props.RouteFlag
+                ?<><br/>ReturnDate: {index.InboundLeg.DepartureDate}</>
+                :<></>
+                }
             </div>
             )}
             </div>
