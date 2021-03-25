@@ -1,0 +1,43 @@
+///////// Code for other parameters 
+
+
+<input 
+value={props.Query} className="input_first" type="text" placeholder="Enter Query" onChange={handleInputChangeQuery}>
+</input>
+
+<input
+value={props.Country} className="input_second" type="text" placeholder="Enter Country" onChange={handleInputChangeCountry}>
+</input>
+
+<input
+value={props.Currency} className="input_small" type="text" placeholder="Enter Currency" onChange={handleInputChangeCurrency}>
+</input>
+
+<input
+value={props.Locale} className="input_small" type="text" placeholder="Enter Locale" onChange={handleInputChangeLocale}>
+</input>
+
+/////////////////////////////////////////////////////////////////////////
+
+
+{props.DateFlag
+                ?<><br/>ReturnDate: {index.InboundLeg.DepartureDate}</>
+                :<></>
+                }
+
+////////////////////////////////////////////////////////////////////////
+
+<input
+value={props.OutboundPartialDate} className="input_small" type="text" placeholder="Enter Depart Date" onChange={handleInputChangeOutboundPartialDate}>
+</input>
+
+<input
+value={props.InboundPartialDate} className="input_small" type="text" placeholder="Enter Return Date" onChange={handleInputChangeInboundPartialDate}>
+</input>
+
+////////////////////////////////////////////////////////////////////
+
+<div id="radio" onChange={ReturnorOneway}>
+<input id="Return" type="radio" value="Return" name="radio" /> Return&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="One way" type="radio" value="One way" name="radio" /> One way
+</div>  
